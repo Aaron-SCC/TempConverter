@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">TempConverter</string>
+    <string name="Degrees">Degrees</string>
+    <string name="Fahrenheit">Fahrenheit</string>
+    <string name="Celsius">Celsius</string>
+    <string name="TextUserTemp">ENTER IN NUMBER</string>
 </resources>
