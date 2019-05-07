@@ -56,13 +56,14 @@
         android:layout_height="35dp"
         android:layout_marginTop="31dp"
         android:layout_marginBottom="33dp"
-        android:autofillHints="ENTER IN TEMPERATURE"
         android:ems="10"
-        android:inputType="textPersonName"
+        android:hint="@string/TextUserTemp"
+        android:inputType="number"
         android:textSize="14sp"
         app:layout_constraintBottom_toBottomOf="@+id/textViewConvertedDegrees"
         app:layout_constraintStart_toStartOf="@+id/textViewDegrees"
         app:layout_constraintTop_toTopOf="@+id/textViewDegrees"
-        app:layout_constraintVertical_bias="0.217" />
+        app:layout_constraintVertical_bias="0.217"
+        android:autofillHints="ENTER IN NUMBER" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
