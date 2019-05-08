@@ -127,10 +127,13 @@ public class MainActivity extends AppCompatActivity
         double totalAmount = ( billAmount - 32.0 )*( 5.0/9.0 ) ; // F to C formula
 
         // display the other results with formatting
-        NumberFormat currency = NumberFormat.getCurrencyInstance();
+        NumberFormat nf = NumberFormat.getInstance();
+        nf.setMaximumFractionDigits(2);
+        textViewConvertedDegrees.setText(nf.format(totalAmount));
+//        NumberFormat currency = NumberFormat.getCurrencyInstance();
 //        DecimalFormat temp = DecimalFormat.getInstance();
 //        tipTextView.setText(currency.format(tipAmount));
-        textViewConvertedDegrees.setText(currency.format(totalAmount));
+////        textViewConvertedDegrees.setText(currency.format(totalAmount));
 //        textViewConvertedDegrees.setText(temp.format(totalAmount));
 //        double textViewConvertedDegrees = Math.round(totalAmount * 100) / 100.0;
 
